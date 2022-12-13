@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#content-root {
+  padding-top: 50px;
+}
+
+.skip-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.skip-content:focus {
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  color: #e8e8e8;
+  background-color: #F0EBCE;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.header__title {
+  margin: 0;
+ color: #616161;
+  font-size: 24px;
+}
+
+.header__menu,
+.close__menu {
+  display: none;
+  font-size: 24px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.close__menu {
+  font-size: 44px;
+}
+
+#nav {
+  font-size: 20px;
+}
+
+.nav a {
+  color: #616161;
+  position: relative;
+  top: 0;
+  transition: top ease 0.4s;
+  padding: 1.3em;
+}
+
+.nav__item a:hover {
+  color: #ff0000;
+}
+
+.nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__list li {
+  margin-left: 18px;
+}
+
+.hero {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-image: url("../public/images/sharp/hero-image_4-large.jpg");
+}
+
+.hero__inner {
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.list-restoran__label {
+  margin: auto;
+  width: max-content;
+  font-size: 22px;
+}
+
+.list-restoran {
+  margin: 32px auto auto;
+  text-align: left;
+  display: grid;
+  grid-gap: 16px;
+}
+
+.restoran-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.post-item_content {
+  padding: 20px;
+}
+
+
+.restoran-item_thumbnail {
+  width: 100%;
+  max-height: 20rem;
+}
+
+.restoran-item_city {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.restoran-item_rating {
+  color: #ffd700;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.restoran-item_description {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.restaurant-item__not__found {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #a7a7a7;
+}
+.restaurant-item_name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+}
+
+.restaurant-item_name:hover {
+  opacity: 0.5;
+}
+
+.restaurant-item_name {
+  text-decoration: none;
+  color: #a5c2da;
+}
+
+.post-item__date {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.post-item__title {
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #AA8B56;
+}
+
+.other {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+.jobs-item,
+.info-item {
+  background-color: #f2f1e7;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease 0.4s;
+  height: 550px;
+}
+
+.jobs-item:hover,
+.info-item:hover {
+  color: #e8e8e8;
+  background-color: #a1c5e0;
+}
+
+.jobs-item__content {
+  padding: 16px;
+}
+
+.jobs-item__thumbnail {
+  width: 100%;
+  height: max-content;
+}
+
+.jobs-item__name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.jobs-item__city {
+  font-size: 14px;
+  bottom: 0;
+}
+
+.jobs-item__more {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.info-item__thumbnail {
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+
+.info-item__more {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+	.hero {
+		background-image: url("../public/images/sharp/hero-image_4-small.jpg");
+	}
+}
+
+footer {
+  background-color:   #F0EBCE;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  color: #616161;
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 24px;
+  color: #616161;
+}
